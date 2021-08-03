@@ -1,0 +1,77 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded, sans-serif;
+    font-weight: normal;
+  }
+body{
+    padding: 0;
+    margin: 0;
+
+}
+.main-content{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    gap: 7px;
+}
+button{
+    cursor: pointer;
+    font-size: 40px;
+    outline: none;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
+    backdrop-filter: blur( 18.5px );
+    -webkit-backdrop-filter: blur( 18.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+button:hover{
+    background: rgb(221, 221, 221);
+}
+.active{
+    background: rgb(221, 221, 221);
+}
+.span2{
+    grid-column: span 2;
+}
+.output{
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 15px 15px 0 0;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.pre{
+    color: white;
+    font-size: 20px;
+}
+.current{
+    color: white;
+    font-size: 45px;
+    font-weight: 500;
+    padding: 10px 0;
+}
+.dele{
+    background: rgba( 255, 0, 0, 0.6 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
+    backdrop-filter: blur( 18.5px );
+    -webkit-backdrop-filter: blur( 18.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.dele:hover{
+    background: rgba( 255, 0, 0, 0.7);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
+    backdrop-filter: blur( 18.5px );
+    -webkit-backdrop-filter: blur( 18.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
